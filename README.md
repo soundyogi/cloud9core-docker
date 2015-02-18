@@ -1,11 +1,12 @@
-#c9/core cloud9 SDK
+#c9/core cloud9 SDK dockerfile
 =============
 
-    docker pull kdelfour/cloud9-docker
+    docker pull soundyogi/c9core-docker
+or:
 
     docker build -t="soundyogi/c9core-docker" github.com/soundyogi/c9core-docker
     
-## or:
+or:
 
     git clone https://github.com/soundyogi/c9core-docker
     cd c9core-docker/
