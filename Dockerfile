@@ -11,9 +11,10 @@ MAINTAINER Johannes Jaeger <kontakt@johannesjaeger.com>
 RUN apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev
 
 # ------------------------------------------------------------------------------
-# Install Node.js
-RUN curl -sL https://deb.nodesource.com/setup | bash -
-RUN apt-get install -y nodejs
+# Install NPM 
+#RUN curl -sL https://deb.nodesource.com/setup | bash -
+#RUN apt-get install -y nodejs
+RUN curl -L https://npmjs.com/install.sh | sh
 
 # ------------------------------------------------------------------------------
 # Install NVM
