@@ -11,12 +11,6 @@ RUN apt-get update
 RUN apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev
 
 # ------------------------------------------------------------------------------
-# Install NPM 
-#RUN curl -sL https://deb.nodesource.com/setup | bash -
-#RUN apt-get install -y nodejs
-RUN curl -L https://npmjs.com/install.sh | sh
-
-# ------------------------------------------------------------------------------
 # Install NVM
 RUN git clone https://github.com/creationix/nvm.git /.nvm
 RUN echo ". /.nvm/nvm.sh" >> /etc/bash.bashrc
@@ -25,6 +19,12 @@ RUN /bin/bash -c '. /.nvm/nvm.sh && \
     nvm use v0.10.18 && \
     nvm alias default v0.10.18'
     
+# ------------------------------------------------------------------------------
+# Install NPM 
+#RUN curl -sL https://deb.nodesource.com/setup | bash -
+#RUN apt-get install -y nodejs
+RUN curl -L https://npmjs.com/install.sh | sh
+
 # ------------------------------------------------------------------------------
 # Install Cloud9SDK
 RUN git clone https://github.com/c9/core.git c9sdk
