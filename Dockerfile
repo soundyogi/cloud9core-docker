@@ -32,7 +32,7 @@ WORKDIR /c9sdk
 RUN scripts/install-sdk.sh
 
 # Add supervisord conf
-# ADD conf/cloud9.conf /etc/supervisor/conf.d/
+ADD conf/c9.conf /etc/supervisor/conf.d/
 
 # ------------------------------------------------------------------------------
 # Add volumes
@@ -45,8 +45,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # ------------------------------------------------------------------------------
 # Expose ports.
-EXPOSE 8080
+EXPOSE 8181
 
 # ------------------------------------------------------------------------------
 # Start supervisor, define default command.
-# CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
