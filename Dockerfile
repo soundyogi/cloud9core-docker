@@ -28,7 +28,6 @@ RUN /bin/bash -c '. /.nvm/nvm.sh && \
 # ------------------------------------------------------------------------------
 # Install Cloud9SDK
 RUN git clone https://github.com/c9/core.git c9sdk
-RUN ll
 RUN cd c9sdk
 RUN scripts/install-sdk.sh
 
