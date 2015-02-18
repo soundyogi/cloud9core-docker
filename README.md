@@ -2,29 +2,29 @@
 =============
 ## Get
 
-    docker pull soundyogi/c9core-docker
+    docker pull soundyogi/cloud9core-docker
 or:
 
-    docker build -t="soundyogi/c9core-docker" github.com/soundyogi/c9core-docker
+    docker build -t="soundyogi/cloud9core-docker" github.com/soundyogi/cloud9core-docker
     
 or:
 
-    git clone https://github.com/soundyogi/c9core-docker
+    git clone https://github.com/soundyogi/cloud9core-docker
     cd c9core-docker/
 
 
-    sudo docker build --force-rm=true --tag="$USER/c9core-docker:latest" .
+    sudo docker build --force-rm=true --tag="$USER/cloud9core-docker:latest" .
     
 
-    sudo docker run -d -p 8181:8181 $USER/c9core-docker:latest
+    sudo docker run -d -p 8181:8181 $USER/cloud9core-docker:latest
     
     
 ## Usage
 
-    docker run -it -d -p 8181:8181 soundyogi/c9core-docker
+    docker run -it -d -p 8181:8181 soundyogi/cloud9core-docker
     
 
-    docker run -it -d -p 8181:8181 -v /your-path/workspace/:/workspace/ soundyogi/c9core-docker
+    docker run -it -d -p 8181:8181 -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
     
 
 =======
