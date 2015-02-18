@@ -31,3 +31,6 @@ And run
     sudo docker run -d -p 3131:3131 -v /your-path/workspace/:/workspace/ $USER/cloud9-docker:latest
     
 Enjoy !!    
+=======
+# c9core-docker
+Cloud9/core SDK
