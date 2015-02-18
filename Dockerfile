@@ -31,8 +31,6 @@ RUN git clone https://github.com/c9/core/ /c9sdk
 WORKDIR /c9sdk
 RUN scripts/install-sdk.sh
 
-RUN node ./node_modules/mappings/scripts/postinstall-notice.js
-    
 # Add supervisord conf
 # ADD conf/cloud9.conf /etc/supervisor/conf.d/
 
