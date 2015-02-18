@@ -1,19 +1,17 @@
-#c9/core cloud9 sdk 3.0
+#c9/core cloud9 SDK
 =============
 
+docker pull kdelfour/cloud9-docker
 
-Download automated build from public Docker Hub Registry: docker pull kdelfour/cloud9-docker
-or:
-
-(alternatively, you can build an image from Dockerfile: docker build -t="jjaeger/c9core-docker" github.com/soundyogi/c9core-docker  )
+docker build -t="soundyogi/c9core-docker" github.com/soundyogi/c9core-docker  )
 
 ## Usage
 
-    docker run -it -d -p 8181:8181 jjaeger/c9core-docker
+    docker run -it -d -p 8181:8181 soundyogi/c9core-docker
     
 You can add a workspace as a volume directory with the argument *-v /your-path/workspace/:/workspace/* like this :
 
-    docker run -it -d -p 8181:8181 -v /your-path/workspace/:/workspace/ jjaeger/c9core-docker
+    docker run -it -d -p 8181:8181 -v /your-path/workspace/:/workspace/ soundyogi/c9core-docker
     
 ## Build and run with custom config directory
 
@@ -30,7 +28,6 @@ And run
 
     sudo docker run -d -p 3131:3131 -v /your-path/workspace/:/workspace/ $USER/cloud9-docker:latest
     
-Enjoy !!    
 =======
 # c9core-docker
 Cloud9/core SDK
