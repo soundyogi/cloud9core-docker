@@ -26,7 +26,7 @@ Build it
     
 And run
 
-    sudo docker run -d -p 8181:8181 -v /your-path/workspace/:/workspace/ $USER/c9core-docker:latest
+    sudo docker run -d -p 8181:8181 $USER/c9core-docker:latest
     
 =======
 # c9core-docker
