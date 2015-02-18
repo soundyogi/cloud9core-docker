@@ -27,7 +27,8 @@ RUN /bin/bash -c '. /.nvm/nvm.sh && \
 # ------------------------------------------------------------------------------
 # Install Cloud9SDK
 RUN git clone https://github.com/c9/core.git c9sdk
-RUN ./c9sdk/scripts/install-sdk.sh
+RUN cd c9sdk/scripts
+RUN ./install-sdk.sh
 
 
 RUN node ./node_modules/mappings/scripts/postinstall-notice.js
