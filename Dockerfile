@@ -33,7 +33,7 @@ RUN c9sdk/scripts/install-sdk.sh
 RUN node ./node_modules/mappings/scripts/postinstall-notice.js
     
 # Add supervisord conf
-ADD conf/cloud9.conf /etc/supervisor/conf.d/
+# ADD conf/cloud9.conf /etc/supervisor/conf.d/
 
 # ------------------------------------------------------------------------------
 # Add volumes
@@ -50,4 +50,4 @@ EXPOSE 8080
 
 # ------------------------------------------------------------------------------
 # Start supervisor, define default command.
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+# CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
