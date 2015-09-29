@@ -4,6 +4,7 @@
 # Pull base image.
 FROM dockerfile/supervisor
 MAINTAINER Johannes Jaeger <kontakt@johannesjaeger.com>
+MAINTAINER Michel Albers <technik@interwebs-ug.de>
 
 # ------------------------------------------------------------------------------
 # Install base
@@ -33,6 +34,11 @@ RUN scripts/install-sdk.sh
 
 # Add supervisord conf
 ADD conf/c9.conf /etc/supervisor/conf.d/
+
+# ------------------------------------------------------------------------------
+# Install Meteor and PhantomJS
+RUN curl https://install.meteor.com/ | sh
+RUN npm install -g phantomjs
 
 # ------------------------------------------------------------------------------
 # Add volumes
