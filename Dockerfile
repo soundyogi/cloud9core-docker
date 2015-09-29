@@ -23,8 +23,8 @@ RUN git clone https://github.com/creationix/nvm.git /.nvm
 RUN echo ". /.nvm/nvm.sh" >> /etc/bash.bashrc
 RUN /bin/bash -c '. /.nvm/nvm.sh && \
     nvm install v0.10.18 && \
-    nvm use v0.10.18 && \
-    nvm alias default v0.10.18'
+    nvm use v0.12.7 && \
+    nvm alias default v0.12.7'
 
 # ------------------------------------------------------------------------------
 # Install Cloud9SDK

@@ -1,5 +1,5 @@
 #c9/core cloud9 SDK dockerfile
-=============
+
 ## Get
 
     docker pull soundyogi/cloud9core-docker
@@ -19,14 +19,6 @@ or:
     sudo docker run -d -p 8181:8181 $USER/cloud9core-docker:latest
     
     
-## Usage
+## Usage (authentication is now mandantory)
 
-    docker run -it -d -p 8181:8181 soundyogi/cloud9core-docker
-    
-
-    docker run -it -d -p 8181:8181 -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
-    
-
-=======
-# c9core-docker
-Cloud9/core SDK dockerfile
+    docker run -it -d -p 8181:8181 -e 'C9_USER=<YOUR_USERNAME>' -e 'C9_PASSWORD=<YOUR_PASSWORD>' -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
