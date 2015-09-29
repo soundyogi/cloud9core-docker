@@ -2,7 +2,7 @@
 # Based on a work at https://github.com/docker/docker.
 # ------------------------------------------------------------------------------
 # Pull base image.
-FROM dockerfile/supervisor
+FROM quintenk/supervisor
 MAINTAINER Johannes Jaeger <kontakt@johannesjaeger.com>
 MAINTAINER Michel Albers <technik@interwebs-ug.de>
 
