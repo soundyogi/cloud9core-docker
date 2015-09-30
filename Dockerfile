@@ -22,7 +22,7 @@ RUN curl -L https://npmjs.com/install.sh | sh
 RUN git clone https://github.com/creationix/nvm.git /.nvm
 RUN echo ". /.nvm/nvm.sh" >> /etc/bash.bashrc
 RUN /bin/bash -c '. /.nvm/nvm.sh && \
-    nvm install v0.10.18 && \
+    nvm install v0.12.7 && \
     nvm use v0.12.7 && \
     nvm alias default v0.12.7'
 
@@ -44,6 +44,7 @@ RUN npm install -g phantomjs
 # Add volumes
 RUN mkdir /workspace
 VOLUME /workspace
+VOLUME /var/log/supervisor
 
 # ------------------------------------------------------------------------------
 # Clean up APT when done.
@@ -55,4 +56,4 @@ EXPOSE 8181
 
 # ------------------------------------------------------------------------------
 # Start supervisor, define default command.
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf", "-n"]
