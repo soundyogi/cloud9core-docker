@@ -24,4 +24,4 @@ or:
 
 ### Actually run it
 
-    docker run -d -e 'VIRTUAL_HOST=code.mywebsite.com" -e 'C9_USER=<YOUR_USERNAME>' -e 'C9_PASSWORD=<YOUR_PASSWORD>' -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
+    docker run -d -e 'VIRTUAL_HOST=code.mywebsite.com' -e 'C9_USER=<YOUR_USERNAME>' -e 'C9_PASSWORD=<YOUR_PASSWORD>' -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
