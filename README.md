@@ -19,7 +19,6 @@ or:
 
 ### Prerequisites
 * This image is intended for use with jwilder/nginx-proxy -> https://github.com/jwilder/nginx-proxy
-* It relies on the environment variable VIRTUAL_HOST which is required by the reverse proxy
 * You _HAVE_ to specify a user and a password for authentication with ```-e "C9_USER=<YOUR_USERNAME>"``` and ```-e "C9_PASSWORD=<YOUR_PASSWORD>"```
 
 ### Actually run it
