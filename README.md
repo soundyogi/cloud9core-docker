@@ -22,4 +22,6 @@ or:
 * It relies on the environment variable VIRTUAL_HOST which is required by the reverse proxy
 * You _HAVE_ to specify a user and a password for authentication with ```-e "C9_USER=<YOUR_USERNAME>"``` and ```-e "C9_PASSWORD=<YOUR_PASSWORD>"```
 
+### Actually run it
+
     docker run -d -e 'VIRTUAL_HOST=code.mywebsite.com" -e 'C9_USER=<YOUR_USERNAME>' -e 'C9_PASSWORD=<YOUR_PASSWORD>' -v /your-path/workspace/:/workspace/ soundyogi/cloud9core-docker
