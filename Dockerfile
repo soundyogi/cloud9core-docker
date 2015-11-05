@@ -54,4 +54,4 @@ EXPOSE 8181
 
 # ------------------------------------------------------------------------------
 # Start supervisor, define default command.
-CMD ["sh", "-c", "forever /c9sdk/server.js --auth ${C9_USER}:${C9_PASSWORD} --listen 0.0.0.0 -w /workspace"]
+CMD ["sh", "-c", "forever /c9sdk/server.js --auth ${C9_USER}:${C9_PASSWORD} --listen 0.0.0.0 --collab -w /workspace"]
